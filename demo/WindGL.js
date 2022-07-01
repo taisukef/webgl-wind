@@ -1,15 +1,15 @@
 
 import * as util from './util.js';
 
-const load = async (fn) => await (await fetch(fn)).text();
+const fetchText = async (fn) => await (await fetch(fn)).text();
 
-const drawVert = await load('./shaders/draw.vert.glsl');
-const drawFrag = await load('./shaders/draw.frag.glsl');
+const drawVert = await fetchText('./shaders/draw.vert.glsl');
+const drawFrag = await fetchText('./shaders/draw.frag.glsl');
 
-const quadVert = await load('./shaders/quad.vert.glsl');
+const quadVert = await fetchText('./shaders/quad.vert.glsl');
 
-const screenFrag = await load('./shaders/screen.frag.glsl');
-const updateFrag = await load('./shaders/update.frag.glsl');
+const screenFrag = await fetchText('./shaders/screen.frag.glsl');
+const updateFrag = await fetchText('./shaders/update.frag.glsl');
 
 const defaultRampColors = {
     0.0: '#3288bd',
@@ -19,7 +19,7 @@ const defaultRampColors = {
     0.4: '#fee08b',
     0.5: '#fdae61',
     0.6: '#f46d43',
-    1.0: '#d53e4f'
+    1.0: '#d53e4f',
 };
 
 export default class WindGL {
