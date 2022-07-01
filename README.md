@@ -30,3 +30,7 @@ deno run --allow-net --allow-read https://taisukef.github.io/liveserver/liveserv
     1. Object keys are offsets in hours from the first date/time
     2. The label for the GUI control is in the `meta` object
     3. The min, max, and interval for the GUI control are on the `gui.add(meta, ...)` line
+
+## GUI Library
+
+[lil-gui](https://github.com/georgealways/lil-gui)
