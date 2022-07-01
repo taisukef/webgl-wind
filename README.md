@@ -33,4 +33,5 @@ deno run --allow-net --allow-read https://taisukef.github.io/liveserver/liveserv
 
 ## GUI Library
 
-[lil-gui](https://github.com/georgealways/lil-gui)
+[georgealways/lil-gui: Makes a floating panel for controllers on the web. Works as a drop-in replacement for dat.gui in most projects.](https://github.com/georgealways/lil-gui)
+[Natural Earth - Free vector and raster map data at 1:10m, 1:50m, and 1:110m scales](https://www.naturalearthdata.com/)
