@@ -1,3 +1,5 @@
+import WindGL from "./WindGL.js";
+
 // using var to work around a WebKit bug
 var canvas = document.getElementById('canvas'); // eslint-disable-line
 

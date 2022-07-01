@@ -1,13 +1,15 @@
 
-import * as util from './util';
+import * as util from './util.js';
 
-import drawVert from './shaders/draw.vert.glsl';
-import drawFrag from './shaders/draw.frag.glsl';
+const load = async (fn) => await (await fetch(fn)).text();
 
-import quadVert from './shaders/quad.vert.glsl';
+const drawVert = await load('./shaders/draw.vert.glsl');
+const drawFrag = await load('./shaders/draw.frag.glsl');
 
-import screenFrag from './shaders/screen.frag.glsl';
-import updateFrag from './shaders/update.frag.glsl';
+const quadVert = await load('./shaders/quad.vert.glsl');
+
+const screenFrag = await load('./shaders/screen.frag.glsl');
+const updateFrag = await load('./shaders/update.frag.glsl');
 
 const defaultRampColors = {
     0.0: '#3288bd',
