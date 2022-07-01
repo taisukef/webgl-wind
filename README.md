@@ -17,10 +17,8 @@ in particular [A GPU Approach to Particle Physics](http://nullprogram.com/blog/2
 ### Running the demo locally
 
 ```bash
-npm install
-npm run build
-npm start
-# open http://127.0.0.1:1337/demo/
+deno run --allow-net --allow-read https://taisukef.github.io/liveserver/liveserver.js
+# open http://[::]:8080/
 ```
 
 ### Downloading weather data
