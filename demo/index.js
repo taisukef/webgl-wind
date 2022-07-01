@@ -48,6 +48,8 @@ if (pxRatio !== 1) {
     gui.add(meta, 'retina resolution').onFinishChange(updateRetina);
 }
 gui.add(meta, 'github.com/mapbox/webgl-wind');
+gui.close();
+
 updateWind(0);
 updateRetina();
 
