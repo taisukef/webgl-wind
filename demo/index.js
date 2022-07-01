@@ -1,4 +1,5 @@
 import WindGL from "./WindGL.js";
+import { GUI } from "https://cdn.jsdelivr.net/npm/lil-gui@0.16.1/dist/lil-gui.esm.min.js";
 
 // using var to work around a WebKit bug
 var canvas = document.getElementById('canvas'); // eslint-disable-line
@@ -20,7 +21,7 @@ function frame() {
 }
 frame();
 
-const gui = new dat.GUI();
+const gui = new GUI();
 gui.add(wind, 'numParticles', 1024, 589824);
 gui.add(wind, 'fadeOpacity', 0.96, 0.999).step(0.001).updateDisplay();
 gui.add(wind, 'speedFactor', 0.05, 1.0);
